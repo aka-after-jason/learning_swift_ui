@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		AF01A2472F68FA2300F400DD /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = AF01A2462F68FA2300F400DD /* Kingfisher */; };
+		AF7A1B402F6818FC002509BB /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = AF7A1B3F2F6818FC002509BB /* SDWebImageSwiftUI */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		AF874F822F54F8C500B9CF44 /* learning_swift_ui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = learning_swift_ui.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +28,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF01A2472F68FA2300F400DD /* Kingfisher in Frameworks */,
+				AF7A1B402F6818FC002509BB /* SDWebImageSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +72,8 @@
 			);
 			name = learning_swift_ui;
 			packageProductDependencies = (
+				AF7A1B3F2F6818FC002509BB /* SDWebImageSwiftUI */,
+				AF01A2462F68FA2300F400DD /* Kingfisher */,
 			);
 			productName = learning_swift_ui;
 			productReference = AF874F822F54F8C500B9CF44 /* learning_swift_ui.app */;
@@ -94,6 +103,10 @@
 			);
 			mainGroup = AF874F792F54F8C500B9CF44;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				AF7A1B3E2F6818FC002509BB /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+				AF01A2452F68FA2300F400DD /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = AF874F832F54F8C500B9CF44 /* Products */;
 			projectDirPath = "";
@@ -332,6 +345,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AF01A2452F68FA2300F400DD /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.8.0;
+			};
+		};
+		AF7A1B3E2F6818FC002509BB /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.1.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AF01A2462F68FA2300F400DD /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AF01A2452F68FA2300F400DD /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		AF7A1B3F2F6818FC002509BB /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AF7A1B3E2F6818FC002509BB /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AF874F7A2F54F8C500B9CF44 /* Project object */;
 }
