@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		AF01A2472F68FA2300F400DD /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = AF01A2462F68FA2300F400DD /* Kingfisher */; };
+		AF01A2522F69001C00F400DD /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = AF01A2512F69001C00F400DD /* KeychainSwift */; };
 		AF7A1B402F6818FC002509BB /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = AF7A1B3F2F6818FC002509BB /* SDWebImageSwiftUI */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +29,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF01A2522F69001C00F400DD /* KeychainSwift in Frameworks */,
 				AF01A2472F68FA2300F400DD /* Kingfisher in Frameworks */,
 				AF7A1B402F6818FC002509BB /* SDWebImageSwiftUI in Frameworks */,
 			);
@@ -74,6 +76,7 @@
 			packageProductDependencies = (
 				AF7A1B3F2F6818FC002509BB /* SDWebImageSwiftUI */,
 				AF01A2462F68FA2300F400DD /* Kingfisher */,
+				AF01A2512F69001C00F400DD /* KeychainSwift */,
 			);
 			productName = learning_swift_ui;
 			productReference = AF874F822F54F8C500B9CF44 /* learning_swift_ui.app */;
@@ -106,6 +109,7 @@
 			packageReferences = (
 				AF7A1B3E2F6818FC002509BB /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
 				AF01A2452F68FA2300F400DD /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				AF01A2502F69001C00F400DD /* XCRemoteSwiftPackageReference "keychain-swift" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = AF874F832F54F8C500B9CF44 /* Products */;
@@ -355,6 +359,14 @@
 				minimumVersion = 8.8.0;
 			};
 		};
+		AF01A2502F69001C00F400DD /* XCRemoteSwiftPackageReference "keychain-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/evgenyneu/keychain-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 24.0.0;
+			};
+		};
 		AF7A1B3E2F6818FC002509BB /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
@@ -370,6 +382,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = AF01A2452F68FA2300F400DD /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
+		};
+		AF01A2512F69001C00F400DD /* KeychainSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AF01A2502F69001C00F400DD /* XCRemoteSwiftPackageReference "keychain-swift" */;
+			productName = KeychainSwift;
 		};
 		AF7A1B3F2F6818FC002509BB /* SDWebImageSwiftUI */ = {
 			isa = XCSwiftPackageProductDependency;
